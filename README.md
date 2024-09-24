@@ -11,6 +11,7 @@ Before you begin, ensure you have met the following requirements:
 * You have AWS CDK installed (https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
 
 ## Project Structure
+```
 lambda/
 ├── nestjs/                 # Application modules
 │   ├── src/                # User module (example)
@@ -21,7 +22,7 @@ lambda/
 lib/
 │
 ├── cdk-simple-lambda-nestjs-stack.ts  # CDK Stack for Building AWS Gateway and AWS Lambda
-
+```
 
 ## Installing NestJS API Project
 
@@ -66,7 +67,8 @@ Describe your API endpoints here. For example:
 
 1) cd lambda -> cd nestjs
 2) npm run build
-3) from root folder (cd ../cd..) execute: `npx cdk deploy`
+3) from root folder (cd ../cd..)
+   execute: `npx cdk synth`, `npx cdk bootstrap`, `npx cdk deploy`
 
 
     
